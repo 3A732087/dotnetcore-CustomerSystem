@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32002.261
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnetcore-CustomerSystem", "dotnetcore-CustomerSystem\dotnetcore-CustomerSystem.csproj", "{1F3AD685-62D0-4D89-9449-F0BDD992BE0C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F3AD685-62D0-4D89-9449-F0BDD992BE0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F3AD685-62D0-4D89-9449-F0BDD992BE0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F3AD685-62D0-4D89-9449-F0BDD992BE0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F3AD685-62D0-4D89-9449-F0BDD992BE0C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {133D99C9-819D-441C-BB04-52F3368159BB}
+	EndGlobalSection
+EndGlobal
