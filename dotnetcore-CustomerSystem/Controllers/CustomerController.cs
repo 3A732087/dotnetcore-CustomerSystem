@@ -16,5 +16,18 @@ namespace dotnetcore_CustomerSystem.Controllers
             var customers = db.Customer.ToList();
             return View(customers);
         }
+
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Create(Customer customer)
+        {
+            db.Customer.Add(customer);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }
