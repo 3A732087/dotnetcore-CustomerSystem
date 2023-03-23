@@ -29,5 +29,32 @@ namespace dotnetcore_CustomerSystem.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+
+        public IActionResult Edit(int id)
+        {
+            var customer = db.Customer.Where(m => m.Id == id).FirstOrDefault();
+            return View(customer);
+        }
+
+        [HttpPost]
+        public IActionResult Edit(Customer customer)
+        {
+            var modify = db.Customer.Where(m => m.Id == customer.Id).FirstOrDefault();
+            modify.Name = customer.Name;
+            modify.Phone = customer.Phone;
+            modify.Email = customer.Email;
+            modify.Address = customer.Address;
+
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult Delete(int id)
+        {
+            var customer = db.Customer.Where(m => m.Id == id).FirstOrDefault();
+            db.Customer.Remove(customer);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }
